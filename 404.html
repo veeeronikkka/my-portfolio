@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script type="text/javascript">
+        // Check if this is a GitHub Pages site
+        var isGitHubPages = location.hostname === 'veeeronikkka.github.io';
+        // Check if the request was for a file or not
+        var isFile = location.pathname.split('/').pop().indexOf('.') > -1;
+
+        if (isGitHubPages && !isFile) {
+            // Redirect to the index.html with the original path as a query parameter
+            location.replace('/my-portfolio/index.html?redirect=' + encodeURIComponent(location.pathname));
+        }
+    </script>
+    <![endif]-->
+</head>
+<body>
+<noscript>
+    <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+</noscript>
+</body>
+</html>
